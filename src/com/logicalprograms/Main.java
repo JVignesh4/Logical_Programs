@@ -18,6 +18,8 @@ public class Main {
                 primeNumber();
             case 3:
                 perfectNumber();
+            case 4:
+                reverseNumber();
         }
     }
 }

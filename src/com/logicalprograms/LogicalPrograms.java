@@ -57,4 +57,17 @@ public class LogicalPrograms {
         String result = (sum == n) ? (n +" is Perfect Number") : (n +" not Perfect Number");
         System.out.println(result);
     }
+
+    static void reverseNumber(){
+        int number;
+        Scanner input = new Scanner(System.in);
+        number = input.nextInt();
+        int reverse = 0;
+        while (number != 0) {
+            int reminder = number % 10;
+            reverse = reverse * 10 + reminder;
+            number=number/10;
+        }
+        System.out.println("The reverse of the given number is: " + reverse);
+    }
 }
