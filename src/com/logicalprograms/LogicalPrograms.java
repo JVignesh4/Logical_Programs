@@ -54,11 +54,11 @@ public class LogicalPrograms {
             }
             i++;
         }
-        String result = (sum == n) ? (n +" is Perfect Number") : (n +" not Perfect Number");
+        String result = (sum == n) ? (n + " is Perfect Number") : (n + " not Perfect Number");
         System.out.println(result);
     }
 
-    static void reverseNumber(){
+    static void reverseNumber() {
         int number;
         Scanner input = new Scanner(System.in);
         number = input.nextInt();
@@ -66,8 +66,31 @@ public class LogicalPrograms {
         while (number != 0) {
             int reminder = number % 10;
             reverse = reverse * 10 + reminder;
-            number=number/10;
+            number = number / 10;
         }
         System.out.println("The reverse of the given number is: " + reverse);
+    }
+
+    public static int couponNumber(int number) {
+        int[] arr = new int[number];
+        int a = 0;
+        int count = 0;
+        while (arr[number - 1] == 0) {
+            int random = 100 + (int) (Math.random() * 900);
+            boolean value = true;
+            int i;
+            for (i = 0; i <= a; i++) ;
+            if (random == arr[i]) {
+                value = true;
+            }
+            if (!value) {
+                arr[a] = random;
+                a++;
+                count++;
+            } else if (value)
+                count++;
+        }
+        System.out.println("Total random Number needed " + count);
+        return 0;
     }
 }
