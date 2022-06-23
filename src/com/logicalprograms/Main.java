@@ -2,8 +2,7 @@ package com.logicalprograms;
 
 import java.util.Scanner;
 
-import static com.logicalprograms.LogicalPrograms.fibonacciSeries;
-import static com.logicalprograms.LogicalPrograms.primeNumber;
+import static com.logicalprograms.LogicalPrograms.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +16,8 @@ public class Main {
                 fibonacciSeries();
             case 2:
                 primeNumber();
+            case 3:
+                perfectNumber();
         }
     }
 }

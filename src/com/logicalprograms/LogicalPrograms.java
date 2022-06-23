@@ -40,4 +40,21 @@ public class LogicalPrograms {
             System.out.println(n + " the number is prime");
         }
     }
+
+    static void perfectNumber() {
+        int n;
+        int sum = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        n = input.nextInt();
+        int i = 1;
+        while (i <= n / 2) {
+            if (n % i == 0) {
+                sum = sum + i;
+            }
+            i++;
+        }
+        String result = (sum == n) ? (n +" is Perfect Number") : (n +" not Perfect Number");
+        System.out.println(result);
+    }
 }
