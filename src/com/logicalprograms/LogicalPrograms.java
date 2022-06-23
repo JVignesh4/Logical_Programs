@@ -93,4 +93,20 @@ public class LogicalPrograms {
         System.out.println("Total random Number needed " + count);
         return 0;
     }
+
+    static void stopWatch() throws InterruptedException {
+        System.out.println("3");
+        Thread.sleep(1000);
+        System.out.println("2");
+        Thread.sleep(1000);
+        System.out.println("1");
+        Thread.sleep(1000);
+        System.out.println("Go!!!!!");
+        long startTime = System.currentTimeMillis();
+        Scanner stop = new Scanner(System.in);
+        stop.next();
+        long stopTime = System.currentTimeMillis();
+        long reactionTime = stopTime - startTime;
+        System.out.println(reactionTime);
+    }
 }
